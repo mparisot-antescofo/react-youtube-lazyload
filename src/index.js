@@ -2,7 +2,7 @@ import React, { useState, Fragment, useEffect, useRef } from 'react'
 import styles from './styles.module.css'
 
 export const YouTube = (props) => {
-  const { videoId, width, height, privacy, onPlayChange, playing, className } =
+  const { videoId, width, height, privacy, onPlayChange, playing, className, imgSize = 'maxresdefault' } =
     props
   const [showVideo, setShowVideo] = useState(false)
   const iframeRef = useRef(null)
@@ -67,7 +67,7 @@ export const YouTube = (props) => {
         <div
           className={`${styles.image} ${className}`}
           style={{
-            backgroundImage: `url(${`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`})`,
+            backgroundImage: `url(${`https://img.youtube.com/vi/${videoId}/${imgSize}.jpg`})`,
             width,
             height
           }}

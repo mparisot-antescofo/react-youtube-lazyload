@@ -29,6 +29,7 @@ yarn add react-youtube-lazyload
 - width (Optional): (number) Change the width of the player.
 - height (Optional): (number) Change the height of the player.
 - privacy (Optional): (boolean) Privacy Enhanced Mode
+- imgSize (Optional): (string) Size of the preview image. it should be one of "maxresdefault", "sddefault", "hqdefault", "mqdefault" or "default" (default to "hqdefault").
 - playing (Optional): (boolean) Control the play/pause state of the video.
 - className (Optional): (string) Additional CSS classname to apply to the YouTube component (Out of the box tailwindcss support).
 - onPlayChange (Optional): (function) Callback function to be called when the play state changes. It receives a boolean argument indicating whether the video is playing or not.
